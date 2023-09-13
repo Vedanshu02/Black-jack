@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #container{
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+        }
+        html{
+            background: rgb(0,149,35);
+background: linear-gradient(90deg, rgba(0,149,35,1) 0%, rgba(41,252,83,1) 50%, rgba(2,148,21,1) 100%);
+        }
+        button{
+            margin-bottom: 4px;
+            border-color: white;
+            border-radius: 7px;
+            background-color: rgba(41,252,83,1);
+            font-size: large;
+            color: white;
+            padding: 5px 5px;
+        }
+        button:hover{
+            background-color: rgb(184, 184, 0);
+        }
+    </style>
+</head>
+<body><div id="container"> 
+    <h1>BlackJack</h1>
+    <h3 id="messageId">DO YOU WAANA PLAY ?</h3>
+    <p id="cardid">Card:</p>
+     <p id="sumid">Sum:</p>
+     <button  onclick=start()>Start Game</button>
+     <button onclick=newCard()>New Card</button>
+     <button onclick=reset()>Reset</button>
+     <p id="lostel"></p>
+    <script src="index.js"></script>
+</div>
+</body>
+</html>
